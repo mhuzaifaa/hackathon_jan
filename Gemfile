@@ -15,6 +15,8 @@ gem 'rest-client'
 
 gem 'ruby-openai', '~> 5.1'
 
+gem 'rack-cors', :require => 'rack/cors'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
@@ -49,3 +51,5 @@ group :development do
   # gem "spring"
 end
 
+
+gem "langchainrb", "~> 0.9.0"
