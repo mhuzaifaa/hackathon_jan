@@ -21,7 +21,7 @@ class ApiController < ApplicationController
 
   def build_prompt(user_data)
     "Generate 5 recommended stories based on the user's downloaded history and the similarity between story keywords for the user's downloaded story (i.e., #{user_data}).
-    Please ensure that the recommended stories do not include the user's downloaded story title Output should always be an array of [story_title, story_title2]"
+    Please ensure that the recommended stories do not include the user's downloaded story title Output should always be an array of 'recommendations: [story_title, story_title2]'"
   end
 
   def send_to_openai(prompt)
