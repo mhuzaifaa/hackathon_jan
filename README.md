@@ -1,17 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Ruby version
+ruby 3.2.2 
 
-Things you may want to cover:
+### System dependencies
+Docker version 24.0.7
 
-* Ruby version
-3.3
+### Configuration
+`docker-compose build`
 
-* System dependencies
-Docker
-
-* Configuration
-docker-compose build
-
-docker-compose up
+`docker-compose up`
