@@ -22,7 +22,7 @@ class OpenaiService
     # raise messages.inspect
     response = client.chat(
       parameters: {
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-3.5-turbo-16k',
         messages: messages
       }
     )
@@ -40,12 +40,12 @@ class OpenaiService
   def user_download_data
     read_csv_file.map do |row|
       [row['Download Date'], row['Story Title']].to_s
-    end.take(10)
+    end.take(20)
   end
 
   def story_recommendation_data
     read_csv_file.map do |row|
       row.to_s
-    end.take(50)
+    end.take(100)
   end
 end
